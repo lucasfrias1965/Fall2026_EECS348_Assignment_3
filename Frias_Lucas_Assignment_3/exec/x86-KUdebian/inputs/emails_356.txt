@@ -1,0 +1,357 @@
+EMAIL OtherPerson,Review Deadline Important,05-29-2025
+EMAIL ImportantPerson,Important,04-03-2024
+EMAIL ImportantPerson,Travel Status Travel,09-01-2024
+EMAIL ImportantPerson,Urgent Schedule,01-28-2025
+EMAIL ImportantPerson,Important Policy,12-01-2026
+EMAIL Peer,Schedule Schedule,01-25-2023
+EMAIL Boss,Important,08-04-2025
+EMAIL Boss,Urgent Budget Important,11-20-2025
+EMAIL ImportantPerson,Policy Policy,02-25-2025
+EMAIL Subordinate,Status Urgent,01-18-2023
+EMAIL OtherPerson,Review,08-05-2024
+EMAIL Subordinate,Project Deadline,12-08-2024
+EMAIL OtherPerson,Status Travel,03-22-2024
+EMAIL Subordinate,Up Schedule,03-18-2025
+EMAIL Peer,Invoice Meeting Deadline,07-18-2023
+EMAIL Peer,Review Invoice Important,03-31-2025
+EMAIL Peer,Report,03-03-2026
+EMAIL Boss,Deadline Important,07-15-2026
+EMAIL OtherPerson,Deadline Important Update,12-13-2025
+EMAIL Peer,Budget,05-18-2023
+EMAIL Subordinate,Up,02-25-2026
+EMAIL OtherPerson,Project Deadline,08-25-2026
+EMAIL OtherPerson,Status Follow,04-29-2026
+EMAIL Subordinate,Review Important Deadline,10-21-2023
+EMAIL Peer,Lunch Reminder,01-19-2023
+EMAIL Boss,Deadline Schedule,11-08-2026
+EMAIL Peer,Lunch Lunch,08-11-2026
+EMAIL Peer,Lunch,04-20-2025
+EMAIL Peer,Budget,05-17-2023
+EMAIL ImportantPerson,Review,02-20-2023
+EMAIL Subordinate,Follow Review Reminder,02-26-2024
+EMAIL Subordinate,Up Invoice Status,11-30-2026
+EMAIL ImportantPerson,Update Update Invoice,12-16-2026
+EMAIL Peer,Schedule Meeting Status,03-21-2026
+EMAIL Peer,Urgent,01-09-2023
+EMAIL Boss,Follow Follow,01-01-2024
+EMAIL Peer,Report Deadline,09-27-2025
+EMAIL OtherPerson,Lunch Policy,07-04-2026
+EMAIL Subordinate,Deadline Update Meeting,07-14-2025
+EMAIL Boss,Budget,09-19-2024
+EMAIL OtherPerson,Update Status,07-01-2025
+EMAIL Subordinate,Meeting,12-13-2024
+EMAIL Peer,Policy,08-07-2026
+EMAIL ImportantPerson,Follow Reminder,07-18-2024
+EMAIL ImportantPerson,Review Lunch,07-06-2026
+EMAIL Peer,Important Budget Important,12-26-2025
+EMAIL ImportantPerson,Review Travel,09-12-2025
+EMAIL Subordinate,Lunch,01-27-2023
+EMAIL Boss,Report,03-26-2025
+EMAIL Subordinate,Project,07-01-2023
+EMAIL Subordinate,Lunch Invoice Travel,06-29-2026
+EMAIL Peer,Up Lunch Up,01-05-2026
+EMAIL Peer,Meeting Invoice,12-23-2026
+EMAIL OtherPerson,Important Report Update,12-13-2025
+EMAIL ImportantPerson,Urgent Schedule,04-23-2023
+EMAIL ImportantPerson,Important Up Follow,02-13-2026
+EMAIL OtherPerson,Status,12-04-2024
+EMAIL OtherPerson,Update,01-20-2025
+EMAIL ImportantPerson,Project Urgent,04-23-2023
+EMAIL Subordinate,Update Schedule Important,01-13-2025
+EMAIL Boss,Important,10-23-2025
+EMAIL ImportantPerson,Invoice,07-27-2026
+EMAIL Peer,Up Invoice,06-14-2026
+EMAIL Subordinate,Urgent,10-10-2025
+EMAIL Peer,Invoice,01-02-2024
+EMAIL ImportantPerson,Policy,02-13-2026
+EMAIL ImportantPerson,Travel,06-22-2024
+EMAIL Boss,Travel,01-31-2025
+EMAIL ImportantPerson,Deadline,06-01-2025
+EMAIL Subordinate,Schedule,10-09-2024
+EMAIL ImportantPerson,Update,10-04-2025
+EMAIL Peer,Report,10-19-2026
+EMAIL Subordinate,Important Travel Travel,06-09-2026
+EMAIL Subordinate,Status,03-04-2024
+EMAIL Subordinate,Lunch,04-14-2026
+EMAIL Subordinate,Update Follow Budget,04-13-2024
+EMAIL Peer,Important Follow Policy,09-30-2024
+EMAIL Subordinate,Update,12-29-2024
+EMAIL OtherPerson,Invoice Deadline,12-10-2025
+EMAIL Subordinate,Status Reminder Budget,02-01-2026
+EMAIL Peer,Budget Reminder Up,09-18-2026
+EMAIL Peer,Lunch,11-05-2025
+EMAIL Boss,Status,02-19-2026
+EMAIL Boss,Urgent Review,02-22-2026
+EMAIL ImportantPerson,Project,05-03-2026
+EMAIL Subordinate,Lunch Follow Follow,04-05-2026
+EMAIL OtherPerson,Urgent,04-25-2026
+EMAIL ImportantPerson,Meeting Report,06-29-2025
+EMAIL OtherPerson,Lunch,07-26-2024
+EMAIL Subordinate,Travel,05-17-2023
+EMAIL ImportantPerson,Lunch,08-12-2026
+EMAIL Boss,Status Travel Urgent,10-18-2024
+EMAIL Subordinate,Status Status,03-30-2026
+EMAIL Boss,Follow Deadline,03-18-2026
+EMAIL Peer,Lunch Policy,09-10-2024
+EMAIL OtherPerson,Important,04-12-2026
+EMAIL Subordinate,Review,02-04-2026
+EMAIL OtherPerson,Update,07-25-2024
+EMAIL OtherPerson,Review,06-25-2025
+EMAIL Subordinate,Meeting Project Travel,09-20-2024
+EMAIL ImportantPerson,Budget Reminder Report,10-05-2024
+EMAIL Boss,Travel Travel,07-10-2023
+EMAIL Subordinate,Budget,03-07-2024
+EMAIL Peer,Policy,07-10-2025
+EMAIL OtherPerson,Deadline Meeting Schedule,05-22-2023
+EMAIL ImportantPerson,Report,06-05-2023
+EMAIL OtherPerson,Deadline,01-04-2025
+EMAIL Peer,Lunch Urgent,12-27-2023
+EMAIL Boss,Urgent,04-14-2024
+EMAIL Peer,Update Project,01-11-2026
+EMAIL OtherPerson,Deadline,06-30-2026
+EMAIL Subordinate,Important Budget,07-21-2023
+EMAIL OtherPerson,Urgent,12-11-2023
+EMAIL Boss,Follow Important,12-09-2025
+EMAIL ImportantPerson,Project Up,10-20-2024
+EMAIL Peer,Invoice Review,09-23-2024
+EMAIL Boss,Review Reminder Review,11-13-2026
+EMAIL Subordinate,Schedule,11-28-2024
+EMAIL ImportantPerson,Invoice Schedule Report,02-19-2026
+EMAIL Subordinate,Follow Lunch Follow,01-14-2023
+EMAIL Subordinate,Budget Status Schedule,03-31-2024
+EMAIL Boss,Important Reminder Review,01-10-2025
+EMAIL Peer,Up,06-22-2024
+EMAIL Subordinate,Budget Project Travel,01-22-2024
+EMAIL Boss,Meeting Invoice,06-03-2023
+EMAIL OtherPerson,Important,01-17-2023
+EMAIL OtherPerson,Schedule Report Budget,08-30-2023
+EMAIL Subordinate,Status Status Travel,04-13-2025
+EMAIL ImportantPerson,Urgent Status Policy,03-25-2023
+EMAIL ImportantPerson,Invoice Update,01-18-2026
+EMAIL OtherPerson,Deadline Budget Budget,07-11-2023
+EMAIL Boss,Review Follow Budget,04-21-2024
+EMAIL OtherPerson,Important Policy,01-26-2026
+EMAIL Peer,Travel,06-12-2024
+EMAIL OtherPerson,Important Meeting Urgent,06-12-2024
+EMAIL Peer,Meeting Review,01-04-2025
+EMAIL Boss,Review,02-26-2026
+EMAIL ImportantPerson,Schedule Project,01-27-2026
+EMAIL Subordinate,Meeting Up,07-21-2024
+EMAIL Peer,Deadline,10-17-2024
+EMAIL Subordinate,Update,07-13-2025
+EMAIL Subordinate,Important Schedule,07-12-2025
+EMAIL OtherPerson,Reminder,04-18-2024
+EMAIL Peer,Follow Meeting,12-06-2023
+EMAIL OtherPerson,Urgent Invoice Urgent,09-27-2025
+EMAIL Peer,Deadline Schedule Meeting,05-04-2024
+EMAIL OtherPerson,Urgent Budget Update,10-20-2026
+EMAIL Boss,Meeting,07-16-2025
+EMAIL ImportantPerson,Urgent,06-18-2023
+EMAIL Subordinate,Up Reminder Reminder,11-10-2024
+EMAIL OtherPerson,Status Deadline Deadline,07-01-2023
+EMAIL Subordinate,Deadline,06-04-2024
+EMAIL Boss,Urgent Review,07-25-2026
+EMAIL ImportantPerson,Follow Up,10-21-2026
+EMAIL Peer,Meeting Review,11-07-2024
+EMAIL ImportantPerson,Reminder,02-23-2026
+EMAIL Boss,Travel,12-08-2026
+EMAIL Boss,Report Review Urgent,05-19-2023
+EMAIL Boss,Schedule Policy,10-01-2025
+EMAIL Boss,Project Lunch Update,12-09-2026
+EMAIL Subordinate,Travel Reminder,11-21-2023
+EMAIL ImportantPerson,Follow Review,09-24-2025
+EMAIL Peer,Project Review,07-31-2023
+EMAIL Subordinate,Travel Travel,01-07-2026
+EMAIL OtherPerson,Meeting Important,04-30-2025
+EMAIL ImportantPerson,Review,08-07-2024
+EMAIL Peer,Report Urgent,01-09-2025
+EMAIL Boss,Status,01-26-2026
+EMAIL ImportantPerson,Report Status,11-08-2023
+EMAIL Peer,Budget,08-22-2026
+EMAIL OtherPerson,Follow Budget Budget,04-16-2023
+EMAIL ImportantPerson,Important,10-10-2024
+EMAIL Peer,Important Policy,05-26-2026
+EMAIL Subordinate,Up Report Lunch,03-28-2023
+EMAIL OtherPerson,Up,02-20-2025
+EMAIL OtherPerson,Deadline,08-05-2026
+EMAIL ImportantPerson,Meeting Urgent Invoice,03-21-2026
+EMAIL Boss,Status,07-15-2024
+EMAIL Boss,Follow Policy,01-09-2024
+EMAIL Subordinate,Project Follow,12-12-2026
+EMAIL Boss,Follow Reminder,07-15-2023
+EMAIL OtherPerson,Urgent Report Deadline,04-05-2023
+EMAIL OtherPerson,Up,08-07-2024
+EMAIL OtherPerson,Meeting,08-22-2026
+EMAIL Peer,Status,05-26-2026
+EMAIL ImportantPerson,Update,03-06-2026
+EMAIL ImportantPerson,Policy,02-03-2023
+EMAIL Subordinate,Update,10-14-2026
+EMAIL ImportantPerson,Status,01-18-2025
+EMAIL Peer,Budget Urgent,03-18-2026
+EMAIL OtherPerson,Meeting,06-06-2025
+EMAIL OtherPerson,Reminder Reminder Urgent,07-05-2024
+EMAIL OtherPerson,Status,06-30-2024
+EMAIL OtherPerson,Status Follow Budget,04-13-2024
+EMAIL Peer,Deadline,09-08-2023
+EMAIL Boss,Important Budget,12-09-2023
+EMAIL Peer,Lunch Update Schedule,11-01-2026
+EMAIL Subordinate,Deadline,07-12-2025
+EMAIL Subordinate,Review Urgent,06-22-2025
+EMAIL Boss,Up Project Report,11-03-2023
+EMAIL Boss,Invoice,05-10-2024
+EMAIL ImportantPerson,Reminder Update,09-20-2026
+EMAIL OtherPerson,Budget,11-11-2024
+EMAIL Subordinate,Deadline Report,03-22-2026
+EMAIL Boss,Deadline Reminder Schedule,07-31-2025
+EMAIL Peer,Review,09-03-2025
+EMAIL ImportantPerson,Status,02-13-2023
+EMAIL ImportantPerson,Follow Travel Important,09-12-2024
+EMAIL OtherPerson,Travel Status,09-21-2023
+EMAIL Subordinate,Status Schedule,04-09-2024
+EMAIL ImportantPerson,Update,08-01-2024
+EMAIL ImportantPerson,Review Review Follow,05-09-2025
+EMAIL OtherPerson,Lunch Budget,08-19-2023
+EMAIL OtherPerson,Meeting Lunch Meeting,01-15-2024
+EMAIL Peer,Meeting,01-25-2023
+EMAIL ImportantPerson,Budget Status,12-01-2025
+EMAIL Peer,Schedule,12-17-2026
+EMAIL ImportantPerson,Policy Up Meeting,09-30-2025
+EMAIL OtherPerson,Travel Schedule,04-24-2025
+EMAIL ImportantPerson,Travel,03-24-2026
+EMAIL Peer,Status Travel Lunch,08-06-2025
+EMAIL Peer,Report Reminder,01-16-2025
+EMAIL Subordinate,Project Schedule,01-19-2025
+EMAIL ImportantPerson,Invoice Urgent,01-23-2023
+EMAIL OtherPerson,Follow,10-07-2026
+EMAIL ImportantPerson,Important Important,10-29-2025
+EMAIL OtherPerson,Update Invoice,06-17-2026
+EMAIL OtherPerson,Lunch,08-30-2026
+EMAIL OtherPerson,Up Budget,04-28-2025
+EMAIL OtherPerson,Policy Report,12-01-2026
+EMAIL ImportantPerson,Schedule Lunch Invoice,03-20-2023
+EMAIL Subordinate,Up,11-05-2025
+EMAIL Peer,Policy Project,12-05-2024
+EMAIL Subordinate,Important Update Follow,06-10-2023
+EMAIL ImportantPerson,Travel Lunch Schedule,07-30-2026
+EMAIL Subordinate,Deadline Meeting,05-07-2026
+EMAIL Boss,Reminder,05-10-2024
+EMAIL Boss,Review Update Budget,04-19-2025
+EMAIL Boss,Meeting,08-19-2024
+EMAIL Peer,Status Schedule,05-12-2023
+EMAIL Subordinate,Invoice,03-10-2025
+EMAIL Boss,Status Invoice,12-06-2023
+EMAIL Peer,Meeting,12-06-2024
+EMAIL OtherPerson,Update,04-28-2024
+EMAIL Peer,Travel Urgent,06-11-2024
+EMAIL Peer,Follow Schedule,03-13-2023
+EMAIL OtherPerson,Budget Status,04-14-2025
+EMAIL Boss,Reminder Review Status,04-19-2025
+EMAIL Peer,Follow Reminder,10-10-2023
+EMAIL Boss,Policy Urgent,12-12-2023
+EMAIL ImportantPerson,Meeting Invoice,04-05-2024
+EMAIL ImportantPerson,Urgent,06-14-2025
+EMAIL OtherPerson,Travel Important Project,11-28-2023
+EMAIL OtherPerson,Status Status Update,07-09-2025
+EMAIL Subordinate,Project,02-27-2026
+EMAIL ImportantPerson,Reminder,03-13-2026
+EMAIL OtherPerson,Review,06-06-2025
+EMAIL Subordinate,Follow,02-17-2026
+EMAIL Boss,Budget Schedule Follow,05-26-2024
+EMAIL ImportantPerson,Deadline Up,12-10-2024
+EMAIL Peer,Urgent Schedule,09-06-2024
+EMAIL Subordinate,Important Urgent Invoice,08-02-2023
+EMAIL OtherPerson,Invoice Budget,09-28-2025
+EMAIL OtherPerson,Update,08-12-2024
+EMAIL Boss,Schedule Up Schedule,08-11-2026
+EMAIL Boss,Urgent Follow,05-26-2023
+EMAIL Boss,Schedule Update Travel,07-24-2023
+EMAIL OtherPerson,Lunch,03-31-2024
+EMAIL Boss,Project,10-23-2023
+EMAIL Boss,Urgent,08-23-2023
+EMAIL Subordinate,Meeting,08-16-2024
+EMAIL ImportantPerson,Reminder Report,01-24-2026
+EMAIL OtherPerson,Up Up,03-03-2026
+EMAIL Subordinate,Policy Travel Schedule,08-07-2025
+EMAIL Peer,Review Follow,08-07-2024
+EMAIL ImportantPerson,Status,05-23-2024
+EMAIL Peer,Project Travel Reminder,07-08-2026
+EMAIL OtherPerson,Schedule,02-19-2025
+EMAIL Peer,Meeting,03-05-2025
+EMAIL Subordinate,Status,08-03-2023
+EMAIL Subordinate,Travel Follow,03-13-2026
+EMAIL Peer,Status Invoice Update,12-24-2024
+EMAIL Subordinate,Lunch Budget,10-08-2025
+EMAIL Peer,Project Schedule Update,10-12-2026
+EMAIL Subordinate,Meeting Urgent Status,08-07-2026
+EMAIL Boss,Status Deadline Reminder,02-17-2023
+EMAIL ImportantPerson,Budget Important,01-27-2026
+EMAIL ImportantPerson,Status,03-26-2026
+EMAIL Boss,Urgent,06-23-2025
+EMAIL ImportantPerson,Report,06-14-2025
+EMAIL OtherPerson,Review Invoice,04-27-2024
+EMAIL Boss,Update,07-25-2026
+EMAIL ImportantPerson,Meeting,01-05-2026
+EMAIL OtherPerson,Deadline Report Project,05-09-2023
+EMAIL Peer,Travel Urgent,08-13-2024
+EMAIL Peer,Lunch,08-13-2024
+EMAIL ImportantPerson,Policy Reminder Follow,05-26-2024
+EMAIL ImportantPerson,Review,08-15-2025
+EMAIL Subordinate,Review,06-25-2023
+EMAIL Boss,Budget Reminder Travel,05-11-2023
+EMAIL ImportantPerson,Report Report Review,10-06-2026
+EMAIL Peer,Invoice Invoice Up,02-04-2026
+EMAIL Peer,Reminder Follow Travel,03-09-2025
+EMAIL OtherPerson,Reminder,11-07-2025
+EMAIL Peer,Review,08-25-2024
+EMAIL OtherPerson,Meeting,06-04-2025
+EMAIL Peer,Review Review,02-20-2024
+EMAIL ImportantPerson,Report,11-29-2026
+EMAIL ImportantPerson,Reminder,08-09-2026
+EMAIL ImportantPerson,Budget Up,03-23-2026
+EMAIL Subordinate,Schedule Meeting Invoice,02-18-2026
+EMAIL Peer,Update Reminder Status,04-22-2025
+EMAIL OtherPerson,Reminder Urgent Meeting,10-20-2023
+EMAIL OtherPerson,Project,10-22-2026
+EMAIL ImportantPerson,Reminder Review,05-05-2023
+EMAIL Boss,Report,09-28-2025
+EMAIL Peer,Meeting Reminder,03-17-2023
+EMAIL OtherPerson,Report Up Update,05-24-2025
+EMAIL OtherPerson,Report,07-30-2025
+EMAIL Subordinate,Meeting Urgent,02-01-2023
+EMAIL Boss,Travel,04-03-2025
+EMAIL Peer,Schedule Schedule Follow,11-23-2026
+EMAIL OtherPerson,Important,09-12-2024
+EMAIL Boss,Policy Schedule Status,09-03-2026
+EMAIL Boss,Meeting,04-27-2023
+EMAIL Subordinate,Schedule Travel,11-26-2024
+EMAIL Peer,Travel,08-14-2026
+EMAIL ImportantPerson,Report,11-05-2026
+EMAIL OtherPerson,Report,03-16-2025
+EMAIL Peer,Lunch Travel,01-06-2026
+EMAIL Boss,Important Report Report,05-03-2024
+EMAIL OtherPerson,Policy Deadline,11-08-2024
+EMAIL ImportantPerson,Policy Follow,02-09-2025
+EMAIL OtherPerson,Project,11-24-2023
+EMAIL ImportantPerson,Follow Policy,08-23-2026
+EMAIL Peer,Policy Status,01-15-2025
+EMAIL OtherPerson,Important Up Budget,03-26-2025
+EMAIL Peer,Update Reminder Invoice,06-09-2024
+EMAIL Boss,Report,02-29-2024
+EMAIL Peer,Reminder Follow,02-10-2023
+EMAIL Boss,Lunch Up,11-01-2025
+EMAIL OtherPerson,Status,06-06-2025
+EMAIL Subordinate,Policy Important Reminder,11-11-2023
+EMAIL Boss,Status Schedule Deadline,01-13-2024
+EMAIL Subordinate,Schedule Important Update,05-20-2024
+EMAIL Boss,Urgent,12-23-2025
+EMAIL Subordinate,Follow,09-26-2025
+EMAIL Subordinate,Travel Follow,11-11-2023
+EMAIL OtherPerson,Invoice Up,12-26-2025
+EMAIL OtherPerson,Meeting Status Deadline,01-03-2024
+EMAIL Boss,Report Travel Travel,03-16-2023
+EMAIL ImportantPerson,Reminder Status Follow,05-09-2026
+EMAIL Peer,Budget Update Policy,06-04-2023
+EMAIL Boss,Follow Policy,12-07-2026
+EMAIL Boss,Schedule Review,03-14-2025
+EMAIL ImportantPerson,Report Important,07-05-2024
+COUNT

@@ -1,0 +1,49 @@
+EMAIL ImportantPerson,Urgent,04-11-2023
+EMAIL Boss,Policy,08-05-2023
+EMAIL ImportantPerson,Review Urgent Deadline,09-24-2025
+EMAIL OtherPerson,Review Schedule,03-15-2024
+EMAIL Subordinate,Status,11-08-2024
+EMAIL Subordinate,Meeting Travel Reminder,03-02-2024
+EMAIL Peer,Schedule Reminder Update,08-22-2026
+EMAIL Peer,Up Meeting,09-21-2024
+EMAIL Boss,Budget Project Review,09-08-2026
+EMAIL Peer,Up Status Travel,09-05-2026
+EMAIL Boss,Report Follow,06-18-2023
+EMAIL Subordinate,Budget,07-22-2024
+EMAIL Boss,Invoice Policy Policy,09-13-2025
+EMAIL Peer,Follow Meeting,09-19-2025
+EMAIL Peer,Urgent Follow,12-04-2025
+EMAIL Boss,Reminder,11-29-2024
+EMAIL Boss,Report Update,12-03-2024
+EMAIL ImportantPerson,Project Policy,01-29-2025
+EMAIL Peer,Lunch Lunch,07-17-2024
+EMAIL Subordinate,Meeting,09-15-2024
+EMAIL Boss,Update Urgent Meeting,03-24-2023
+EMAIL ImportantPerson,Follow Important,01-10-2024
+EMAIL Peer,Urgent Deadline Reminder,10-25-2026
+EMAIL Peer,Follow Deadline Budget,02-23-2023
+EMAIL Subordinate,Meeting,11-01-2025
+EMAIL OtherPerson,Report Follow Budget,10-29-2025
+EMAIL OtherPerson,Report Policy,10-21-2026
+EMAIL Boss,Status,01-15-2025
+EMAIL Peer,Report Schedule Review,09-21-2025
+EMAIL Boss,Deadline,08-27-2026
+EMAIL Boss,Deadline Project Travel,05-18-2025
+EMAIL OtherPerson,Project Meeting Budget,04-16-2024
+EMAIL Subordinate,Follow,04-21-2023
+EMAIL Peer,Follow Status Schedule,08-09-2023
+EMAIL ImportantPerson,Up Schedule,04-07-2026
+EMAIL Boss,Status Policy,05-30-2024
+EMAIL OtherPerson,Status Urgent,05-09-2025
+EMAIL Subordinate,Reminder,05-30-2024
+EMAIL Boss,Policy Review Update,09-26-2024
+EMAIL OtherPerson,Status Deadline Lunch,02-13-2023
+EMAIL Boss,Meeting,07-04-2025
+EMAIL OtherPerson,Deadline Invoice Status,12-02-2026
+EMAIL Subordinate,Meeting Deadline Important,11-06-2023
+EMAIL Peer,Policy Invoice Invoice,04-15-2024
+EMAIL ImportantPerson,Meeting,10-21-2025
+EMAIL Subordinate,Important Policy Urgent,04-05-2025
+EMAIL Boss,Reminder Up,08-19-2024
+EMAIL Peer,Meeting,12-03-2025
+COUNT

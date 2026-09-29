@@ -1,0 +1,15 @@
+EMAIL ImportantPerson,Budget Lunch Important,12-25-2026
+EMAIL Peer,Up Travel Follow,06-11-2025
+EMAIL Boss,Up Deadline Invoice,09-09-2024
+EMAIL Boss,Important,10-02-2025
+EMAIL OtherPerson,Project Report Report,02-26-2024
+EMAIL Boss,Status Travel,10-04-2025
+EMAIL Boss,Report Status Review,04-21-2025
+EMAIL Subordinate,Reminder Update Urgent,02-22-2024
+EMAIL ImportantPerson,Policy Urgent Review,09-08-2026
+EMAIL Subordinate,Project,07-18-2023
+EMAIL ImportantPerson,Status Report Update,02-18-2026
+EMAIL Boss,Meeting Urgent Reminder,11-08-2026
+EMAIL Subordinate,Project Schedule Update,07-05-2024
+EMAIL Subordinate,Follow,11-24-2024
+COUNT

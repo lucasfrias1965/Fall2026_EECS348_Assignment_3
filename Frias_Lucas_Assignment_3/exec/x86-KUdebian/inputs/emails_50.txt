@@ -1,0 +1,51 @@
+EMAIL Boss,Up,08-06-2025
+EMAIL Boss,Project Status Urgent,07-15-2024
+EMAIL Subordinate,Urgent,02-10-2026
+EMAIL OtherPerson,Invoice Policy Status,05-10-2024
+EMAIL ImportantPerson,Follow Budget,10-09-2026
+EMAIL Peer,Budget Report,04-05-2026
+EMAIL Boss,Travel Status Deadline,05-03-2025
+EMAIL ImportantPerson,Project Report,06-10-2025
+EMAIL ImportantPerson,Update Travel,10-29-2024
+EMAIL Subordinate,Update Urgent,03-30-2026
+EMAIL Boss,Travel,12-23-2024
+EMAIL OtherPerson,Project Up,10-06-2023
+EMAIL Boss,Schedule,05-26-2023
+EMAIL Boss,Urgent,12-25-2023
+EMAIL Boss,Report,02-23-2025
+EMAIL OtherPerson,Travel,05-10-2025
+EMAIL Subordinate,Follow,05-05-2023
+EMAIL Subordinate,Status,08-12-2024
+EMAIL ImportantPerson,Schedule Meeting Schedule,05-05-2025
+EMAIL Subordinate,Reminder,12-01-2025
+EMAIL Boss,Follow,06-06-2025
+EMAIL Boss,Urgent Follow,04-21-2025
+EMAIL Peer,Urgent Up Update,05-14-2026
+EMAIL ImportantPerson,Reminder Important Travel,11-16-2024
+EMAIL Subordinate,Travel Meeting Invoice,05-23-2026
+EMAIL Peer,Project,07-16-2023
+EMAIL OtherPerson,Policy,11-21-2024
+EMAIL Boss,Report Budget,08-30-2026
+EMAIL Subordinate,Update Follow Schedule,11-12-2025
+EMAIL ImportantPerson,Policy,12-11-2024
+EMAIL Subordinate,Reminder Lunch Urgent,08-01-2023
+EMAIL Boss,Policy,05-25-2024
+EMAIL Peer,Deadline Reminder,03-03-2024
+EMAIL Subordinate,Review Invoice Budget,05-11-2025
+EMAIL Subordinate,Meeting Meeting,07-06-2026
+EMAIL ImportantPerson,Invoice Reminder,09-04-2025
+EMAIL ImportantPerson,Lunch Status,08-21-2023
+EMAIL Boss,Urgent,09-23-2023
+EMAIL Subordinate,Status,09-03-2025
+EMAIL ImportantPerson,Important Schedule,02-03-2023
+EMAIL Boss,Up Policy Update,03-08-2026
+EMAIL ImportantPerson,Important Urgent Up,07-20-2024
+EMAIL Peer,Lunch Invoice,01-31-2023
+EMAIL Boss,Reminder Follow Budget,01-17-2025
+EMAIL Boss,Important,11-22-2023
+EMAIL ImportantPerson,Project,01-14-2024
+EMAIL OtherPerson,Lunch Meeting Policy,06-23-2024
+EMAIL ImportantPerson,Follow,07-26-2026
+EMAIL OtherPerson,Travel Report,02-19-2026
+EMAIL OtherPerson,Meeting,07-17-2026
+COUNT

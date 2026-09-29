@@ -1,0 +1,53 @@
+EMAIL Subordinate,Review Policy,12-26-2026
+EMAIL Boss,Urgent,07-09-2023
+EMAIL Peer,Update Important,07-26-2025
+EMAIL Boss,Schedule Invoice Update,09-02-2025
+EMAIL ImportantPerson,Important,11-06-2026
+EMAIL Boss,Urgent Invoice,01-28-2024
+EMAIL Peer,Follow Project Status,01-26-2025
+EMAIL Boss,Invoice,07-03-2023
+EMAIL OtherPerson,Up Lunch,11-14-2025
+EMAIL Peer,Meeting,09-29-2025
+EMAIL ImportantPerson,Review,12-10-2023
+EMAIL Subordinate,Update Follow Report,05-31-2023
+EMAIL Subordinate,Reminder Follow,09-04-2025
+EMAIL Boss,Travel,06-06-2023
+EMAIL Subordinate,Urgent,06-02-2026
+EMAIL Subordinate,Report Budget Up,01-10-2023
+EMAIL Boss,Reminder,10-27-2025
+EMAIL Peer,Meeting Status,07-08-2025
+EMAIL Boss,Follow,09-09-2024
+EMAIL ImportantPerson,Urgent,01-18-2026
+EMAIL Peer,Lunch Policy Invoice,03-28-2026
+EMAIL OtherPerson,Reminder,10-01-2024
+EMAIL OtherPerson,Urgent Up Deadline,10-09-2023
+EMAIL Boss,Up,03-08-2026
+EMAIL OtherPerson,Urgent Schedule Status,01-10-2025
+EMAIL ImportantPerson,Reminder Reminder,12-26-2024
+EMAIL ImportantPerson,Review,02-22-2024
+EMAIL Peer,Project Reminder,12-23-2023
+EMAIL ImportantPerson,Up,02-03-2023
+EMAIL Peer,Invoice Follow Report,09-27-2024
+EMAIL ImportantPerson,Travel Invoice Reminder,01-02-2025
+EMAIL Peer,Urgent,04-17-2026
+EMAIL Peer,Important Invoice Report,05-16-2025
+EMAIL OtherPerson,Update Travel,02-23-2023
+EMAIL Subordinate,Project,02-26-2024
+EMAIL Peer,Project Meeting,02-12-2023
+EMAIL Peer,Report,01-12-2024
+EMAIL ImportantPerson,Schedule Update Review,12-17-2023
+EMAIL Subordinate,Travel Travel Status,01-09-2024
+EMAIL Boss,Reminder,12-07-2025
+EMAIL Subordinate,Schedule,04-28-2026
+EMAIL Subordinate,Report Follow Update,11-07-2025
+EMAIL Boss,Budget,03-21-2024
+EMAIL OtherPerson,Up Deadline Invoice,11-16-2025
+EMAIL OtherPerson,Meeting Review Deadline,01-31-2023
+EMAIL Subordinate,Project Budget Reminder,08-22-2025
+EMAIL Boss,Meeting,08-28-2025
+EMAIL OtherPerson,Budget,03-01-2023
+EMAIL OtherPerson,Important Review,11-11-2026
+EMAIL Subordinate,Up,03-07-2024
+EMAIL OtherPerson,Travel,01-04-2023
+EMAIL Peer,Meeting,01-05-2025
+COUNT

@@ -1,0 +1,18 @@
+EMAIL OtherPerson,Deadline Follow Urgent,02-10-2026
+EMAIL ImportantPerson,Up Status Travel,06-09-2026
+EMAIL Peer,Schedule Lunch,10-25-2023
+EMAIL Boss,Budget Deadline Status,08-25-2026
+EMAIL Peer,Travel Policy,07-20-2024
+EMAIL OtherPerson,Invoice,02-26-2023
+EMAIL Boss,Lunch,02-13-2025
+EMAIL Peer,Review Schedule,03-09-2023
+EMAIL Peer,Reminder Travel Review,09-14-2024
+EMAIL OtherPerson,Urgent Follow Deadline,05-12-2024
+EMAIL OtherPerson,Project,02-28-2025
+EMAIL Boss,Project,10-23-2025
+EMAIL OtherPerson,Urgent,04-12-2023
+EMAIL ImportantPerson,Policy,09-17-2026
+EMAIL ImportantPerson,Status Important,04-17-2026
+EMAIL Boss,Meeting Important Follow,07-23-2025
+EMAIL ImportantPerson,Policy Project Project,12-18-2023
+COUNT
