@@ -23,7 +23,7 @@ import subprocess
 import sys
 import time
 
-PROGRAMS = ["./anthropic", "./moonshot"]
+PROGRAMS = ["./anthropic", "./human"]
 MIN_EMAILS = 10
 MAX_EMAILS = 10_000
 NUM_SIZES = 25        # how many input sizes between MIN and MAX

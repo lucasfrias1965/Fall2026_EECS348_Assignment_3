@@ -1,0 +1,380 @@
+// ceo_inbox.cpp
+// EDITED BY LUCAS FRIAS
+// - added comments and fixed code to use vectors.
+// - sender category is now a uint8_t enum instead of a string.
+// prioritizes emails for a ceo using a hand-built max heap.
+// build: g++ -std=c++11 -Wall -Wextra -o ceo_inbox ceo_inbox.cpp
+// run:   ./ceo_inbox inbox.txt
+
+#include <cstdint>
+#include <fstream>
+#include <iostream>
+#include <string>
+#include <vector>
+
+// ---------------------------------------------------------------
+// category: who sent the email. the value is the rank.
+// higher rank = read sooner.
+// ---------------------------------------------------------------
+
+
+//uses an enum to tstore the category, explicity sets each value
+enum class Category : std::uint8_t {
+    Unknown         = 0,
+    OtherPerson     = 1,
+    ImportantPerson = 2,
+    Peer            = 3,
+    Subordinate     = 4,
+    Boss            = 5
+};
+
+// ---------------------------------------------------------------
+// email: one message. knows how to rank itself.
+// ---------------------------------------------------------------
+class Email {
+private:
+    Category    sender; //uses our enum
+    std::string subject; //subject still has to be a string
+    std::string date;       // MM-DD-YYYY
+    long long   sequence;   // arrival order, breaks exact ties (earlier wins)
+
+    // MM-DD-YYYY -> YYYYMMDD so a bigger number means a newer date
+    static long DateKeyOf(const std::string& d) {
+        //given a constant string slice reference converts the date into
+        //a long, is a static function
+        if (d.size() != 10 || d[2] != '-' || d[5] != '-') return 0;
+        //error handling for incorrect date, return a simple zero
+        int month = std::stoi(d.substr(0, 2));//convert the month by the first 0-2 chars
+        int day   = std::stoi(d.substr(3, 2));//next is the day, we american here
+        int year  = std::stoi(d.substr(6, 4));//lastly the year
+        return static_cast<long>(year) * 10000L + month * 100L + day;//returns the formatting
+    }
+
+public:
+    Email() : sender(Category::Unknown), subject(""), date(""), sequence(0) {}//inits a default email type for its constructor
+    //we don't need a destructor because this is just a normal object interface. this goes out of scope with
+    //our vector now
+    Email(Category s, const std::string& subj, //defines our init method and parameters
+          const std::string& d, long long seq)
+        : sender(s), subject(subj), date(d), sequence(seq) {}
+
+    //these functions will return the sender, subject, date, etc for every
+    //category and value that we recieve here
+    Category           GetSender()  const { return sender; }
+    const std::string& GetSubject() const { return subject; }
+    const std::string& GetDate()    const { return date; }
+    
+    //this will return the category, these are the only defined category and
+    //will do string matching with our enum
+    static Category ParseCategory(const std::string& text) {
+        if (text == "Boss")            return Category::Boss;
+        if (text == "Subordinate")     return Category::Subordinate;
+        if (text == "Peer")            return Category::Peer;
+        if (text == "ImportantPerson") return Category::ImportantPerson;
+        if (text == "OtherPerson")     return Category::OtherPerson;
+        return Category::Unknown; //default fall through case
+    }
+    //returns the category to a string so we can display it, but we use cstrings
+    //because it will be stored in BSS as a string literal (that's why
+    //we're not using C++ string types)
+    static const char* CategoryName(Category category) {
+        switch (category) {
+            case Category::Boss:            return "Boss";
+            case Category::Subordinate:     return "Subordinate";
+            case Category::Peer:            return "Peer";
+            case Category::ImportantPerson: return "ImportantPerson";
+            case Category::OtherPerson:     return "OtherPerson";
+            case Category::Unknown:         break;
+        }
+        return "Unknown";
+    }
+
+    //determines whether a given date is a valid date
+    //given its string slice, returns a boolean if truey or falsey
+    //doesn't actually determine whether or not the date is a real
+    //date like could exist on the calendar, more like if it's a real 
+    //date like it could be formatted in the way a real date 
+    static bool IsValidDate(const std::string& d) {
+        //check the size of the string, and that it's all dashed like XX-XX-XXXX
+        if (d.size() != 10 || d[2] != '-' || d[5] != '-') return false;
+        //now we iterate 
+        for (std::size_t i = 0; i < d.size(); ++i) {
+            //skip the - for the second and fifth spot in the i
+            if (i == 2 || i == 5) continue;
+            //if it's not in the range of ascii chars to be considered valid return false
+            if (d[i] < '0' || d[i] > '9') return false;
+        }
+        //return true
+        return true;
+    }
+
+    // true when this email must be read before the other one
+    bool HasHigherPriorityThan(const Email& other) const {
+        //determine whether it has a priority
+        //if the senders aren't equal default to left, versus right
+        //false being left, right being right
+        if (sender != other.sender) return sender > other.sender;
+
+        long myDate    = DateKeyOf(date); //gets the date, through the DateKeyOf
+        long theirDate = DateKeyOf(other.date); //gets theirDate
+        if (myDate != theirDate) return myDate > theirDate;   //checks which is closer or not, since these are the
+        //same category of senders
+
+        return sequence < other.sequence;                 //earliest arrival physically based on Sonnet's tiebreaking system
+    }
+};
+
+// ---------------------------------------------------------------
+// maxheap: vector-based binary heap. built from scratch.
+// parent of i is (i-1)/2. children of i are 2i+1 and 2i+2.
+// ---------------------------------------------------------------
+class MaxHeap {
+private:
+    std::vector<Email> items; //makes a vector based email
+    //vector implements construction, destruction, etc. this is fully implemented already
+    //by the library which makes it easier
+
+    void Swap(std::size_t a, std::size_t b) {
+        //swap the left and right elements as so
+        Email temp = items[a];
+        items[a]   = items[b];
+        items[b]   = temp;
+    }
+
+    void SiftUp(std::size_t index) {
+        //upheap, basically the same as we'd do it for an array, we just happen to
+        //have a dynamic array which feels pretty nice
+
+        while (index > 0) {
+            //while we're not at the top
+            std::size_t parent = (index - 1) / 2; //get what our parent is
+            if (items[index].HasHigherPriorityThan(items[parent])) {
+                //if we're a bigger priority than the other email (which depends on sender, etc)
+                //also we access the items index part
+                Swap(index, parent); //swap the two
+                index = parent; //set it
+            } else {
+                break;//the element is where it should be, we can break
+            }
+        }
+    }
+
+    void SiftDown(std::size_t index) {
+        //we sift down and set an element to a lower priority
+        while (true) {
+            //lets calculate the left, right, and assume that the "largest"
+            //is the index, where we currently are iterating
+            std::size_t left    = 2 * index + 1;
+            std::size_t right   = 2 * index + 2;
+            std::size_t largest = index;
+            //is the left the bigger one? then set it as the largest
+            if (left < items.size() && items[left].HasHigherPriorityThan(items[largest]))
+                largest = left;//set it here
+            if (right < items.size() && items[right].HasHigherPriorityThan(items[largest]))
+                largest = right;//do the same with the right, set the values here
+
+            if (largest == index) break; //the largest is the index we're at right now, we don't need to sift up
+            Swap(index, largest);//swap the current index with the largest, and set the index to the largest
+            index = largest; //index is now the largest
+        }
+    }
+
+public:
+    //public functions
+    //returns whether or not we are empty and gets our size throughaccessing items
+    bool        IsEmpty() const { return items.empty(); }
+    std::size_t Size()    const { return items.size(); }
+
+    //we just add the element and sift up given its index.
+    //since we sift up at its index we are able to actually
+    //to promote it to the highest value it needs to be
+    void Insert(const Email& email) {
+        items.push_back(email);//push the email back to the end
+        SiftUp(items.size() - 1); //sift the elements up
+    }
+
+    // caller must check IsEmpty() first
+    const Email& Peek() const { return items[0]; }
+
+    // caller must check IsEmpty() first
+    Email ExtractMax() {
+        //let's first get the top
+        Email top = items[0];
+        //now we set the top element to the lowest element we have
+        //the reason for this is we need to perserve the exact order
+        //and this is the best implementation to ensure that all values get sorted from the top
+        //down to their exact order by kinda iterating through the index
+        items[0] = items.back();
+        items.pop_back();//pop_back, remove the items
+        if (!items.empty()) SiftDown(0);//if it's not empty we sift down from the top which now has the lowest value
+        return top;//return the top when we're done
+    }
+};
+
+// ---------------------------------------------------------------
+// inboxprocessor: owns the heap, reads the command file, prints results.
+// ---------------------------------------------------------------
+class InboxProcessor {
+private:
+    //
+    MaxHeap   heap;
+    long long nextSequence;
+    
+    //returns the string trimmed, just removes the whitespace
+    static std::string Trim(const std::string& text) {
+        //this string contains all the whitespace,
+        const std::string whitespace = " \t\r\n";
+        //gets the first of all whtiespace
+        std::size_t first = text.find_first_not_of(whitespace);
+        //if it's an empty string stop here
+        if (first == std::string::npos) return "";
+        //gets the last of all whitespace
+        std::size_t last = text.find_last_not_of(whitespace);
+        //return the replacement of all whitespace before and after
+        return text.substr(first, last - first + 1);
+    }
+
+    void HandleEmail(const std::string& fields) {
+        //firstComma, find the ","
+        std::size_t firstComma  = fields.find(',');
+        std::size_t secondComma = (firstComma == std::string::npos)
+                                      ? std::string::npos
+                                      : fields.find(',', firstComma + 1);
+        //second comma, same thing, we're just trying to find the next occurance
+        if (secondComma == std::string::npos) {
+            //output an error if we get the null terminator char
+            std::cerr << "skipped bad EMAIL line (need 3 fields): " << fields << "\n";
+            return;
+        }
+        //okay now we have to parse all of the strings at their position
+        //to get them before we translate it, this is not the most exicitng
+        //work we just process after the indicdes
+        std::string senderText = Trim(fields.substr(0, firstComma));
+        std::string subject    = Trim(fields.substr(firstComma + 1,
+                                                    secondComma - firstComma - 1));
+        std::string date       = Trim(fields.substr(secondComma + 1));
+    
+        //now we get the sender by parsing the category senderText
+        Category sender = Email::ParseCategory(senderText);
+        if (sender == Category::Unknown) {
+            //remvoe the default "unknown" sender when the enum string eval falls through
+            //kinda makes some of the handling dead code but this could be trigged
+            std::cerr << "skipped EMAIL with unknown sender: " << senderText << "\n";
+            return;
+        }
+        if (!Email::IsValidDate(date)) {
+            //if the email has an invalid date, skip it
+            std::cerr << "skipped EMAIL with bad date: " << date << "\n";
+            return;
+        }
+        //otherwise throw it in the heap, using the suffix so we can get nextSeqeucenand tierate
+        //it as well
+        heap.Insert(Email(sender, subject, date, nextSequence++));
+    }
+
+    void HandleCount() const {
+        //prints the string of handlecount, and displays the emails left to read
+        std::cout << "There are " << heap.Size() << " emails to read.\n\n";
+    }
+
+    void HandleNext() const {
+        //if the heap is empty, then there are no emails left toread
+        if (heap.IsEmpty()) {
+            std::cout << "No emails to read.\n\n";
+            //returns the emails left tor ead
+            return;
+        }
+        const Email& top = heap.Peek();
+        //get what the top is
+        //display the output
+        std::cout << "Next email:\n"
+                  << "Sender: "  << Email::CategoryName(top.GetSender()) << "\n"
+                  << "Subject: " << top.GetSubject() << "\n"
+                  << "Date: "    << top.GetDate()    << "\n\n";
+    } 
+
+    void HandleRead() {
+        //handle the email being read, and if its empty, display nothing
+        if (heap.IsEmpty()) {
+            std::cout << "No emails to read.\n\n";
+            return;
+        }
+        heap.ExtractMax();//otherwise extract the top value
+    }
+
+public:
+    //make an inbox processor that contains the heap
+    InboxProcessor() : heap(), nextSequence(0) {}
+
+    bool ProcessFile(const std::string& path) {
+        //tries to process our file, returns true
+        //or false depending on its value
+        
+        //the ifstream input
+        std::ifstream input(path.c_str());
+        //if its not open err out and return false
+        if (!input.is_open()) {
+            std::cerr << "cannot open file: " << path << "\n";
+            return false;
+        }
+        
+        //get the sttring line
+        std::string line;
+
+        //while we get each input, line
+        while (std::getline(input, line)) {
+            line = Trim(line);//trim whitespace on the line
+            if (line.empty()) continue;//ignore empty lines
+
+            std::size_t space   = line.find(' '); //find the spce
+            std::string command = (space == std::string::npos) ? line
+                                                               : line.substr(0, space); //get the command, 
+            std::string rest    = (space == std::string::npos) ? ""
+                                                               : line.substr(space + 1); //then the rest follow after the first space as per the format
+    
+            //this matches the string with the current function for every value,
+            //corresponds with string literals. sends an error message if they don't know
+            if (command == "EMAIL")      HandleEmail(rest);
+            else if (command == "COUNT") HandleCount();
+            else if (command == "NEXT")  HandleNext();
+            else if (command == "READ")  HandleRead();
+            else std::cerr << "skipped unknown command: " << line << "\n";
+        }
+        return true;
+    }
+};
+
+// ---------------------------------------------------------------
+// application: entry point wrapper so main holds no logic.
+// ---------------------------------------------------------------
+class Application {
+public:
+    int Run(int argc, char* argv[]) {
+        //run the main application, very object orientated c++
+        std::string path;
+        //get the string path
+
+        //check if we passed any string, if so that's our path
+        if (argc > 1) {
+            path = argv[1];
+        } else {
+            //otherwise prompt the user for the recommended input file
+            std::cout << "input file: ";
+            std::getline(std::cin, path);
+        }
+
+        InboxProcessor processor; //make an inboxprocesser
+        //run the main process file, returna  boolean depending on the actual 
+        //succes state
+        return processor.ProcessFile(path) ? 0 : 1;
+    }
+};
+
+int main(int argc, char* argv[]) {
+    //last but not least, our main function.
+    //we probably don't need the App wrapper but it's
+    //very principled so i'll leave it
+    Application app; //make an app
+    return app.Run(argc, argv);//return the returned return statement from our email processer -> application -> main function
+}
+
