@@ -566,7 +566,7 @@ But both of them did this tremendously differently. While Sonnet implemented a s
 
 In terms of handling incorrect user input, only Sonnet implements actual error handling, which will fail to add the element to the maxheap with standard output. KIMI will fail to process the element correctly and have all sorts of errors if the field isn't processed correctly and is malformated.
 
-Sonnet will not do realistic date formating though. It will format the year, month, or day, incorrectly if it goes above 12, 31, or some unrealistic year within 4 digits.
+Sonnet will not do realistic date formating though. It will format the year, month, or day, incorrectly if it goes above 12, 31, or some unrealistic year within 4 digits. This is because it doesn't implement basic error checking for those dates. This is kind of to be expected, and the issue seems to be more on the representation of the data, too. I would give Sonnet a "functional" evaluation, but the code is not completely airtight when we don't assume nice data, while KIMI doesn't work well at all if it's any bad data.
 
 One last comment: as much as I have distaste in C++, I have to concede that the C++ implementation is more legible and better when implementing complex data structures. Reading takes much less mental effort. Both Sonnet and Kimi implemented commonsense implementations that used C++ features (for example, the better string library) much better that I could have
 
@@ -1301,6 +1301,9 @@ Since I know exactly what the issue is, and it's a small change, I used Claude's
 ```cpp
 // ceo_inbox.cpp
 // EDITED BY LUCAS FRIAS
+// REVISIION GENERATED ** BY CLAUDE OPUS 5.5 **
+// wanna be as explicit as i can. i did not hand program this
+// revision comments are below:
 // - added comments and fixed code to use vectors.
 // - sender category is now a uint8_t enum instead of a string.
 // prioritizes emails for a ceo using a hand-built max heap.
@@ -1714,9 +1717,43 @@ def human_memory_kb(n):
     return 13312.0
 ```
 
-We can see slightly overall improvements in the time complexity for each program in terms of small n values. By just using heap vectors and enums, our slope scales slightly lower, from 2.09 > 1.49. We have a decent optimization from just understanding the basic C++ attributes and methods of running these programs. This input is generally optimized.
+We can see slightly overall improvements in the time complexity for each program in terms of small n values. By just using heap vectors and enums, our slope scales slightly lower, from 2.09 > 1.49. We have a decent optimization from just understanding the basic C++ attributes and methods of running these programs. This input is generally optimized in a linear sense by a huge time factor.
 
+In fact, by graphing the slopes directly (which represents the time in less than nanoseconds) we can see there is a general
+linear trend that grows for massive chunks of data
+
+```
+t
+12|       -- 
+10|      /  
+8 |    /-
+6 |  _/
+4 | / 
+2 |-
+  |--------------------------
+n  2  4  6  8  10  12  14  16  
+Human.cpp line (rough)
+
+t
+12|     --
+10|    /  
+8 |  --
+6 | / 
+4 |-
+2 |
+  |--------------------------
+n  2  4  6  8  10  12  14  16  
+Human.cpp line (rough)
+
+
+```
+
+The slope is much more gradual and has a linear scaling difference for large input sizes. By implementing vectors instead of doing it ourself through the abtsraction of the class, we save time, make our program safer, and make it more maintainable and simple
 
 # Conclusion
 
-I appreciate your review of this assignment, as always. I hope this was an interesting comparison between the Chinese and American models and some interesting implementations. LLMs always have varying results, and I wonder how biased these results are, but Sonnet seems much better at "oneshot" prompts that this assignment requires. 
+I appreciate your review of this assignment, as always. I hope this was an interesting comparison between the Chinese and American models and some interesting implementations. LLMs always have varying results, and I wonder how biased these results are, but Sonnet seems much better at "oneshot" prompts that this assignment requires. Even still, there are sma;; things that make this code interesting bt at any sort of large scale, unmaintainable.
+
+I hope you enjoyed reading through this analysis. Again, C++ is not my favorite language and I am not the best at it, but I hope that my analysis was thorough. Have a great rest of your day.
+
+Lucas Frias
